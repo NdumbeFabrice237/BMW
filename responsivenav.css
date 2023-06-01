@@ -1,0 +1,256 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+}
+header{
+    background: url(./images/g60-bmw-5-series-i5-limousine-hometeaser-desktop.jpg.asset.1679063143628.jpg), linear-gradient(90deg, rgba(16,0,36,1) 0%, rgba(66,9,121,1) 35%, rgba(255,0,247,1) 100%);
+    height: 80vh;
+    background-size: cover;
+    background-position: center center;
+}
+.heading.primary, .heading.secondary{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+
+.heading.secondary{
+    font-size: 2.7vw;
+    margin-bottom: 20px;
+}
+a.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 180px;
+    min-height: 3.25rem;
+    cursor: pointer;
+    /* margin-bottom: 10px; */
+    transition: all.4s ease;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #fff;
+    max-width: 250px;
+    white-space: nowrap;
+}
+.desktop-nav{
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    /* padding: 20px; */
+    border-bottom: 2px solid #fff;
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  .desktop-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .desktop-nav li {
+    list-style: none;
+  }
+  
+  .desktop-nav a {
+    /* color: #48055f; */
+    text-decoration: none;
+    padding: 30px 15px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease-out;
+  }
+  
+  .desktop-nav a:hover{
+    font-weight: 600;
+  }
+  
+  .desktop-nav a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgb(16,0,36);
+    background: linear-gradient(90deg, rgba(16,0,36,1) 0%, rgba(66,9,121,1) 35%, rgba(255,0,247,1) 100%);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: all 0.3s ease-out;
+  }
+  
+  .mobile-nav a {
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    color: blueviolet;
+    text-align: center;
+    border: 1px solid #eec1fb;
+    position: relative;
+  }
+
+  .mobile-nav{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mobile-nav .menu{
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    height: 100vh;
+    position: fixed;
+    top: 2.8rem;
+    left: 0;
+    background-color: #fff;
+    width: 50%;
+  }
+
+  .mobile-nav .hamburger-menu{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    height: 1.5rem;
+    cursor: pointer;
+    background: rgb(16,0,36);
+    background: linear-gradient(90deg, rgba(16,0,36,1) 0%, rgba(66,9,121,1) 35%, rgba(255,0,247,1) 100%);
+    border-radius: 4px;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    right: 20PX;
+  }
+
+  .hamburger-menu div{
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 4rem;
+  }
+  .desktop-nav a:hover::before {
+    transform: scaleX(1);
+  }
+
+  .page-title{
+    font-size: 3.4rem !important;
+    font-weight: 100 !important;
+    margin-bottom:5px !important; ;
+  }
+
+  .header-content{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .header-btns{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-flow: column;
+    row-gap: 1rem;
+  }
+
+
+  .main-searches{
+    display: flex;
+    justify-content: space-evenly;
+    margin: .4rem 0;
+    column-gap: .4rem;
+  }
+
+  .search-card{
+    flex: 1;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .text-content{
+    padding: 5% 20px 5% 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+    min-height: 130px;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to top,rgba(255,255,255,0) 0,rgba(38,38,38,.4) 100%);
+}
+.button.primary, .chat{
+    background: linear-gradient(90deg, rgba(16,0,36,1) 0%, rgba(66,9,121,1) 35%, rgba(255,0,247,1) 100%);
+}
+
+.button.primary:hover, .chat:hover{
+    background: linear-gradient(90deg, rgba(16,0,36,1) 0%,  rgba(66,9,121,1)15%, rgba(255,0,247,1) 100%);
+}
+.button.secondary{
+    border: 2px solid #fff;
+}
+
+.button.secondary:hover{
+    opacity: 0.5;
+}
+
+.search-card.right{
+    background-image: url(./images/used_car_locator.jpg.asset.1677665467403.jpg);
+}
+
+.search-card.left{
+    background-image: url(./images/New-car-locator_1680x756.jpg.asset.1657894351897.jpg);
+}
+
+.gtsd{
+    height: 400px;
+    padding: 3rem;
+    background-color: rgb(226, 226, 226);
+}
+.chat{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    margin: 3rem;
+    right: 0;
+    z-index: 100;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+}
+.chat-icon{
+    font-size: 2rem;
+    fill: #fff;
+    margin: 0 auto;
+    height: 60%;
+    width: 60%;
+}
+  
+  @media (max-width: 768px) {
+    
+    .desktop-nav{
+      display: none;
+    }
+  
+    nav a::before {
+      display: none;
+    }
+    .mobile-nav{
+      display: flex;
+    }
+    .mobile-nav .menu{
+      display: none;
+    }
+  }
